@@ -48,8 +48,6 @@ form:
     -
         id: KANDIDAADI ESITAJA NIMI
         label: Имя заявителя, выдвигающего кандидата
-        info: |
-            kandidaadi/kandidaatide ees- ja perekonnanimi
     -
         id: KANDIDAADI ESITAJA E-POSTI AADRESS
         class: col-sm-7

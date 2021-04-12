@@ -52,8 +52,6 @@ form:
         id: KANDIDAADI ESITAJA NIMI
         label: Kandidaadi esitaja nimi
         type: text
-        info: |
-            kandidaadi/kandidaatide ees- ja perekonnanimi
     -
         id: KANDIDAADI ESITAJA E-POSTI AADRESS
         class: col-sm-7
