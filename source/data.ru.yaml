@@ -1,3 +1,89 @@
-path: /
+title: Kandidaatide esitamise elektrooniline vorm
+subTitle: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 
-title: EKI Avaldus
+form:
+    -
+        id: AUHIND
+        class: col-sm-5
+        label: Премия
+        type: select
+        options:
+            -
+                value: Древо мира
+                text: Древо мира
+            -
+                value: Научная премия
+                text: Научная премия
+            -
+                value: Литературная премия
+                text: Литературная премия
+    -
+        id: KATEGOORIA
+        label: Категория премии
+        info: |
+            см. условия конкурса
+    -
+        id: KANDIDAADI NIMI
+        label: Имя кандидата
+        info: |
+            имя и фамилия кандидата/кандидатов
+    -
+        id: KANDIDAADI SÜNNIAASTA
+        class: col-sm-5
+        label: Год рождения кандидата
+        type: number
+    -
+        id: KANDIDAADI TELEFONINUMBER
+        class: col-sm-7
+        label: Номер телефона кандидата
+        type: tel
+    -
+        id: KANDIDAADI E-POSTI AADRESS
+        class: col-sm-7
+        label: Адрес эл. почты кандидата
+        type: email
+    -
+        id: KANDIDAADI TÖÖKOHT
+        label: Место работы кандидата
+    -
+        id: KANDIDAADI ESITAJA NIMI
+        label: Имя заявителя, выдвигающего кандидата
+        info: |
+            kandidaadi/kandidaatide ees- ja perekonnanimi
+    -
+        id: KANDIDAADI ESITAJA E-POSTI AADRESS
+        class: col-sm-7
+        label: Адрес эл. почты заявителя
+        type: email
+    -
+        id: KANDIDAADI ESITAJA TÖÖKOHT
+        label: Место работы заявителя
+    -
+        id: TAOTLUSE KIRJELDUS
+        label: Описание заявки
+        type: textarea
+        info: |
+            необходимые для описания пункты см. в условиях конкурса
+    -
+        id: FAILID
+        label: Файлы
+        type: file
+        info: |
+            загрузка прилагаемых документов, требуемых по условиям конкурса.
+            **NB! В названиях всех загружаемых файлов должны быть обозначены содержимое документа и имя номинанта!**
+            Пример: Рекомендация_ЮриНиколаев; ПрограммаФестиваля_ ЮриНиколаев.
+    -
+        id: LINGID LISAMATERJALIDELE INTERNETIS
+        label: Ссылки на дополнительные материалы в интернете
+        type: textarea
+        info: |
+            vt konkursitingimustest, millised punktid tuleb välja tuua
+
+submit: Esita
+
+footer: |
+    **Küsimuste korral palume ühendust võtta hõimurahvaste programmi koordinaatoriga:**
+    Marika Alver
+    Eesti Keele Instituut
+    <marika.alver@eki.ee>
+    +372 5552 9199

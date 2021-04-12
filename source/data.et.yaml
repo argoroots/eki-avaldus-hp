@@ -1,3 +1,94 @@
-path: /
+title: Kandidaatide esitamise elektrooniline vorm
+subTitle: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 
-title: EKI Avaldus
+form:
+    -
+        id: AUHIND
+        class: col-sm-5
+        label: Auhind
+        type: select
+        options:
+            -
+                value: Ilmapuu auhind
+                text: Ilmapuu auhind
+            -
+                value: Rahvusteaduste auhind
+                text: Rahvusteaduste auhind
+            -
+                value: Kirjandusauhind
+                text: Kirjandusauhind
+    -
+        id: KATEGOORIA
+        label: Kategooria
+        type: text
+        info: |
+            vt konkursitingimustest
+    -
+        id: KANDIDAADI NIMI
+        label: Kandidaadi nimi
+        type: text
+        info: |
+            kandidaadi/kandidaatide ees- ja perekonnanimi
+    -
+        id: KANDIDAADI SÜNNIAASTA
+        class: col-sm-5
+        label: Kandidaadi sünniaasta
+        type: number
+    -
+        id: KANDIDAADI TELEFONINUMBER
+        class: col-sm-7
+        label: Kandidaadi telefoninumber
+        type: tel
+    -
+        id: KANDIDAADI E-POSTI AADRESS
+        class: col-sm-7
+        label: Kandidaadi e-posti aadress
+        type: email
+    -
+        id: KANDIDAADI TÖÖKOHT
+        label: Kandidaadi töökoht
+        type: text
+    -
+        id: KANDIDAADI ESITAJA NIMI
+        label: Kandidaadi esitaja nimi
+        type: text
+        info: |
+            kandidaadi/kandidaatide ees- ja perekonnanimi
+    -
+        id: KANDIDAADI ESITAJA E-POSTI AADRESS
+        class: col-sm-7
+        label: Kandidaadi esitaja e-posti aadress
+        type: email
+    -
+        id: KANDIDAADI ESITAJA TÖÖKOHT
+        label: Kandidaadi esitaja töökoht
+        type: text
+    -
+        id: TAOTLUSE KIRJELDUS
+        label: Taotluse kirjeldus
+        type: textarea
+        info: |
+            vt konkursitingimustest, millised punktid tuleb välja tuua
+    -
+        id: FAILID
+        label: Failid
+        type: file
+        info: |
+            Lae üles konkursitingimustes nõutud lisad.
+            **NB! Kõikide üles laetavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!**
+            Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas
+    -
+        id: LINGID LISAMATERJALIDELE INTERNETIS
+        label: Lingid lisamaterjalidele internetis
+        type: textarea
+        info: |
+            vt konkursitingimustest, millised punktid tuleb välja tuua
+
+submit: Esita
+
+footer: |
+    **Küsimuste korral palume ühendust võtta hõimurahvaste programmi koordinaatoriga:**
+    Marika Alver
+    Eesti Keele Instituut
+    <marika.alver@eki.ee>
+    +372 5552 9199
