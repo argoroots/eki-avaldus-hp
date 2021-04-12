@@ -1,6 +1,6 @@
 nav.navbar.navbar-dark.bg-dark
     .container
-        a.navbar-brand.d-none.d-sm-inline(href=self.path)= self.title
+        a.navbar-brand.d-none.d-sm-inline(href=self.path)= self.siteTitle
         ul.navbar-nav.ml-auto
             each path, locale in self.otherLocalePaths
                 li.nav-item
