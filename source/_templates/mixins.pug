@@ -15,7 +15,7 @@ mixin input(data)
                 when 'select'
                     select.form-control(id=data.id)
                         each o in data.options
-                            option(o.value)= o.text
+                            option(value=o.value)= o.text
                 default
                     input.form-control(id=data.id, type=data.type)
 
