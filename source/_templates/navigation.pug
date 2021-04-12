@@ -1,6 +1,6 @@
 nav.navbar.navbar-dark.bg-dark
     .container
-        a.navbar-brand(href=self.path)= self.title
+        a.navbar-brand.d-none.d-sm-inline(href=self.path)= self.title
         ul.navbar-nav.ml-auto
             each path, locale in self.otherLocalePaths
                 li.nav-item
@@ -9,4 +9,4 @@ nav.navbar.navbar-dark.bg-dark
 .container
     .row.mt-5
         .col-sm.text-center
-            img(src='/assets/hoimurahvasteprogramm_logo.jpg' height=200)
+            img(src='/assets/images/hoimurahvasteprogramm_logo.jpg' height=200)
