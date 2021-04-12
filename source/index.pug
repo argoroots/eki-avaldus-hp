@@ -9,4 +9,12 @@ block content
                 +input(i)
         .row.my-5
             .col-sm-4.offset-sm-4
-                button.btn.btn-success.btn-lg.col()= self.submit
+                button#submit.btn.btn-success.btn-lg.col()= self.submit
+
+
+block script
+    script.
+        window.entuApiUrl = '#{ self.env.ENTU_API_URL }'
+        window.entuApiId = '#{ self.env.ENTU_API_ID }'
+        window.entuApiUser = '#{ self.env.ENTU_API_USER }'
+        window.entuApiKey = '#{ self.env.ENTU_API_KEY }'

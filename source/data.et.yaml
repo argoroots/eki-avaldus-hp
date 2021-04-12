@@ -3,7 +3,7 @@ subTitle: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 
 form:
     -
-        id: AUHIND
+        id: prize
         class: col-sm-5
         label: Auhind
         type: select
@@ -18,57 +18,52 @@ form:
                 value: Kirjandusauhind
                 text: Kirjandusauhind
     -
-        id: KATEGOORIA
+        id: category
         label: Kategooria
-        type: text
         info: |
             vt konkursitingimustest
     -
-        id: KANDIDAADI NIMI
+        id: candidate-name
         label: Kandidaadi nimi
-        type: text
         info: |
             kandidaadi/kandidaatide ees- ja perekonnanimi
     -
-        id: KANDIDAADI SÜNNIAASTA
+        id: candidate-birthyear
         class: col-sm-5
         label: Kandidaadi sünniaasta
         type: number
     -
-        id: KANDIDAADI TELEFONINUMBER
+        id: candidate-phone
         class: col-sm-7
         label: Kandidaadi telefoninumber
         type: tel
     -
-        id: KANDIDAADI E-POSTI AADRESS
+        id: candidate-email
         class: col-sm-7
         label: Kandidaadi e-posti aadress
         type: email
     -
-        id: KANDIDAADI TÖÖKOHT
+        id: candidate-workplace
         label: Kandidaadi töökoht
-        type: text
     -
-        id: KANDIDAADI ESITAJA NIMI
+        id: applicant-name
         label: Kandidaadi esitaja nimi
-        type: text
     -
-        id: KANDIDAADI ESITAJA E-POSTI AADRESS
+        id: applicant-email
         class: col-sm-7
         label: Kandidaadi esitaja e-posti aadress
         type: email
     -
-        id: KANDIDAADI ESITAJA TÖÖKOHT
+        id: applicant-workplace
         label: Kandidaadi esitaja töökoht
-        type: text
     -
-        id: TAOTLUSE KIRJELDUS
+        id: notes
         label: Taotluse kirjeldus
         type: textarea
         info: |
             vt konkursitingimustest, millised punktid tuleb välja tuua
     -
-        id: FAILID
+        id: file
         label: Failid
         type: file
         info: |
@@ -76,13 +71,13 @@ form:
             **NB! Kõikide üles laetavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!**
             Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas
     -
-        id: LINGID LISAMATERJALIDELE INTERNETIS
+        id: urls
         label: Lingid lisamaterjalidele internetis
         type: textarea
         info: |
             vt konkursitingimustest, millised punktid tuleb välja tuua
 
-submit: Esita
+submit: Esita avaldus
 
 footer: |
     **Küsimuste korral palume ühendust võtta hõimurahvaste programmi koordinaatoriga:**
