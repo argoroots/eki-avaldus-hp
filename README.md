@@ -1,24 +1,4 @@
-# EkiAvaldus
+# [avaldus.eki.entu.ee](https://avaldus.eki.entu.ee)
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- It's built with [Entu SSG](https://ssg.entu.eu)
+- Page is hosted by [Netlify](https://www.netlify.com)

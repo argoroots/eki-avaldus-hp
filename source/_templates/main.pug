@@ -1,0 +1,45 @@
+block vars
+
+
+include mixins.pug
+
+
+- self.rootUrl = self.locale === 'en' ? '/' : `/${self.locale}/`
+
+
+doctype html
+html(lang=self.locale)
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        title= self.title && self.title !== self.siteTitle ? self.title + ' · ' + self.siteTitle : self.siteTitle
+
+        link(href='/assets/css/bootstrap.min.css', rel='stylesheet')
+        link(href='/style.css', rel='stylesheet')
+
+        style
+            block stylus
+
+        script(src='/assets/js/jquery-3.3.1.min.js')
+        //- script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-67049149-2')
+        //- script.
+        //-     window.dataLayer = window.dataLayer || [];
+        //-     function gtag(){dataLayer.push(arguments);}
+        //-     gtag('js', new Date());
+        //-     gtag('config', 'XXXXXXXXXXXXXX);
+
+    body
+        block body
+            include navigation.pug
+
+            .content
+                block header
+                block content
+
+            include footer.pug
+
+        script(src='/assets/js/bootstrap.min.js')
+        script(src='/script.js')
+
+        block script
