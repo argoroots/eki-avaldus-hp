@@ -1,6 +1,9 @@
 siteTitle: Kandidaatide esitamise elektrooniline vorm
 title: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 
+text: |
+    **NB!** Kuna elektroonilist vormi ei saa vahepeal salvestada, siis täitke elektrooniline taotlus alles siis, kui olete kõik vajalikud lisadokumendid kokku kogunud ja saate need taotlusele kohe juurde laadida.
+
 form:
     -
         id: prize
@@ -80,8 +83,9 @@ form:
 submit: Esita avaldus
 
 footer: |
-    **Küsimuste korral palume ühendust võtta hõimurahvaste programmi koordinaatoriga:**
+    Küsimuste korral palume ühendust võtta hõimurahvaste programmi koordinaatoriga:
+
     Marika Alver
     Eesti Keele Instituut
     <marika.alver@eki.ee>
-    +372 5552 9199
+    [+372 5552 9199](tel:+37255529199)

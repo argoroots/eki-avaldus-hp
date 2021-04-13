@@ -1,5 +1,8 @@
-siteTitle: Kandidaatide esitamise elektrooniline vorm
-title: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
+siteTitle: Электронная форма для выдвижения кандидатов
+title: Премии Программы родственных народов Министерства образования и науки
+
+text: |
+    **NB!** Заполненную наполовину электронную заявку сохранить нельзя. Поэтому её следует заполнять лишь тогда, когда все необходимые документы собраны и готовы к загрузке.
 
 form:
     -
@@ -77,12 +80,13 @@ form:
         info: |
             необходимые для описания пункты см. в условиях конкурса
 
-submit: Esita avaldus
+submit: Подать заявку
 
 
 footer: |
-    **Küsimuste korral palume ühendust võtta hõimurahvaste programmi koordinaatoriga:**
+    При возникновении вопросов просим связаться с координатором Программы родственных народов:
+
     Marika Alver
-    Eesti Keele Instituut
+    Институт эстонского языка
     <marika.alver@eki.ee>
-    +372 5552 9199
+    [+372 5552 9199](tel:+37255529199)
