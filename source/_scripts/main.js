@@ -28,18 +28,29 @@ $(function () {
             console.log('Created entity #' + newEntityId)
             console.log(filesToUpload + ' file(s) to upload')
 
-            for (let i = 0; i < files.length; i++) {
-                createFileProperty(newEntityId, files[i], function(result) {
-                    filesUploaded++
-                    console.log('Created file property #', result)
-                    if (filesToUpload === filesUploaded) {
-                        $('#uploading').addClass('d-none')
-                        $('#done').removeClass('d-none')
-                    }
+            if (filesToUpload > 0) {
+                for (let i = 0; i < filesToUpload; i++) {
+                    createFileProperty(newEntityId, files[i], function(result) {
+                        filesUploaded++
+                        console.log('Created file property #', result)
+                        if (filesToUpload === filesUploaded) {
+                            updateRights(newEntityId, function (r) {
+                                console.log('Updated rights')
+
+                                $('#uploading').addClass('d-none')
+                                $('#done').removeClass('d-none')
+                            })
+                        }
+                    })
+                }
+            } else {
+                updateRights(newEntityId, function (r) {
+                    console.log('Updated rights')
+
+                    $('#uploading').addClass('d-none')
+                    $('#done').removeClass('d-none')
                 })
             }
-
-            console.log($('#file').val())
         })
     })
 
@@ -106,6 +117,22 @@ $(function () {
 
         xhr.open('POST', s3url, true)
         xhr.send(form)
+    }
+
+    function updateRights(entityId, callback) {
+        var data = {
+            entity: window.entuApiUser
+        }
+
+        $.ajax({
+            method: 'POST',
+            url: window.entuApiUrl + '/entity-' + entityId + '/rights',
+            cache: false,
+            data: signRequest(data),
+            success: function() {
+                callback()
+            }
+        })
     }
 
     function signRequest(data) {
