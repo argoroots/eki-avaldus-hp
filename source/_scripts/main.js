@@ -1,8 +1,10 @@
 $(function () {
 
     $('#submit').click(function () {
+        $('#form').addClass('d-none')
+        $('#uploading').removeClass('d-none')
+
         var data = {
-            definition: 'prize-application',
             'prize-application-prize': $('#prize').val(),
             'prize-application-category': $('#category').val(),
             'prize-application-candidate-name': $('#candidate-name').val(),
@@ -14,16 +16,99 @@ $(function () {
             'prize-application-applicant-email': $('#applicant-email').val(),
             'prize-application-applicant-workplace': $('#applicant-workplace').val(),
             'prize-application-notes': $('#notes').val(),
-            'prize-application-file': $('#file').val(),
             'prize-application-urls': $('#urls').val()
         }
 
-        post(data, function(id) {
-            console.log(id)
+        var files = $('#file').prop('files')
+
+        createEntity(data, function(newEntityId) {
+            var filesUploaded = 0
+            var filesToUpload = files.length
+
+            console.log('Created entity #' + newEntityId)
+            console.log(filesToUpload + ' file(s) to upload')
+
+            for (let i = 0; i < files.length; i++) {
+                createFileProperty(newEntityId, files[i], function(result) {
+                    filesUploaded++
+                    console.log('Created file property #', result)
+                    if (filesToUpload === filesUploaded) {
+                        $('#uploading').addClass('d-none')
+                        $('#done').removeClass('d-none')
+                    }
+                })
+            }
+
+            console.log($('#file').val())
         })
     })
 
-    function post (data, callback) {
+    function createEntity(properties, callback) {
+        properties.definition = 'prize-application'
+
+        $.ajax({
+            method: 'POST',
+            url: window.entuApiUrl + '/entity-' + window.entuApiId,
+            cache: false,
+            data: signRequest(properties),
+            success: function(r) {
+                callback(r.result.id)
+            }
+        })
+    }
+
+    function createFileProperty(entityId, file, callback) {
+        var fileData = {
+            entity: entityId,
+            property: 'prize-application-file',
+            filename: file.name,
+            filesize: file.size,
+            filetype: file.type
+        }
+
+        $.ajax({
+            method: 'POST',
+            url: window.entuApiUrl + '/file/s3',
+            cache: false,
+            data: signRequest(fileData),
+            success: function(data) {
+                uploadToS3(file, data.result.s3.url, data.result.s3.data, function() {
+                    callback(data.result.properties['prize-application-file'][0].id)
+                })
+            }
+        })
+    }
+
+    function uploadToS3(file, s3url, s3data, callback) {
+        var xhr = new XMLHttpRequest()
+        var form = new FormData()
+
+        for(var i in s3data) {
+            form.append(i, s3data[i])
+        }
+        form.append('file', file)
+
+        xhr.upload.addEventListener('progress', function(event) {
+            if(event.lengthComputable) {
+                console.log(file.name + ' - ' + Math.round(event.loaded * 1000 / event.total) / 10 + '%')
+            }
+        }, false)
+
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState == 4 && xhr.status == 201) {
+                callback($('Key', xhr.responseXML).text())
+            }
+
+            if(xhr.readyState == 4 && xhr.status != 201) {
+                console.error(file.name + ' - UPLOAD ERROR!')
+            }
+        }
+
+        xhr.open('POST', s3url, true)
+        xhr.send(form)
+    }
+
+    function signRequest(data) {
         var expiration = new Date()
         expiration.setMinutes(expiration.getMinutes() + 10)
 
@@ -36,14 +121,6 @@ $(function () {
         data.policy = CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(JSON.stringify({ expiration: expiration.toISOString(), conditions: conditions })))
         data.signature = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA1(data['policy'], window.entuApiKey))
 
-        $.ajax({
-            method: 'POST',
-            url: window.entuApiUrl + '/entity-' + window.entuApiId,
-            cache: false,
-            data: data,
-            success: function(data) {
-                callback(data.result.id)
-            }
-        })
+        return data
     }
 })

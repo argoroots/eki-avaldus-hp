@@ -82,6 +82,16 @@ form:
 
 submit: Esita avaldus
 
+uploading: |
+    Avaldust esitatakse.
+
+    **Palun oota!**
+
+done: |
+    **Avaldus esitatud.**
+
+    Täname!
+
 footer: |
     Küsimuste korral palume ühendust võtta hõimurahvaste programmi koordinaatoriga:
 
