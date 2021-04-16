@@ -1,18 +1,18 @@
 extends /_templates/main.pug
 
-
 block content
     #form.container
         .row
             .col-sm-8.offset-sm-2
                 h2.text-center.my-5= self.title
                 +markdown(self.text)
-                form()
+                form
                     each i in self.form
                         +input(i)
+
         .row.my-5
             .col-sm-4.offset-sm-4
-                button#submit.btn.btn-success.btn-lg.col()= self.submit
+                button#submit.btn.btn-success.btn-lg.col= self.submit
 
     #uploading.d-none.container
         .row
