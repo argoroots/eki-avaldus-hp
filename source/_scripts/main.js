@@ -1,5 +1,4 @@
 $(function () {
-
     $('#submit').click(function () {
         $('#form').addClass('d-none')
         $('#uploading').removeClass('d-none')
@@ -19,7 +18,14 @@ $(function () {
             'prize-application-urls': $('#urls').val()
         }
 
-        var files = $('#file').prop('files')
+        var files = []
+        var fileElements = $('#file input[type="file"]')
+
+        for (let i = 0; i < fileElements.length; i++) {
+            for (let n = 0; n < fileElements[i].files.length; n++) {
+                files.push(fileElements[i].files[n])
+            }
+        }
 
         createEntity(data, function(newEntityId) {
             var filesUploaded = 0
