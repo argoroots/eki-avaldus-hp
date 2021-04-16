@@ -70,7 +70,8 @@ form:
         label: Failid
         type: file
         info: |
-            Laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/){target="_blank"} nõutud lisad.
+            laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/){target="_blank"} nõutud lisad
+
             **NB!** Kõikide üles laaditavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!
             Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas
     -
