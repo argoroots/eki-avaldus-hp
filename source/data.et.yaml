@@ -24,7 +24,7 @@ form:
         id: category
         label: Kategooria
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/)
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/){target="_blank"}
     -
         id: candidate-name
         label: Kandidaadi nimi
@@ -64,13 +64,13 @@ form:
         label: Taotluse kirjeldus
         type: textarea
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/), millised punktid tuleb välja tuua
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/){target="_blank"}, millised punktid tuleb välja tuua
     -
         id: file
         label: Failid
         type: file
         info: |
-            Laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/) nõutud lisad.
+            Laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/){target="_blank"} nõutud lisad.
             **NB!** Kõikide üles laaditavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!
             Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas
     -
@@ -78,7 +78,7 @@ form:
         label: Lingid lisamaterjalidele internetis
         type: textarea
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/), millised punktid tuleb välja tuua
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/){target="_blank"}, millised punktid tuleb välja tuua
 
 submit: Esita avaldus
 
