@@ -24,7 +24,7 @@ form:
         id: category
         label: Категория премии
         info: |
-            см. условия конкурса
+            см. [условия конкурса](https://ru.fennougria.ee/granty/programma-rodstvennyh-narodov/premii/)
     -
         id: candidate-name
         label: Имя кандидата
@@ -64,21 +64,21 @@ form:
         label: Описание заявки
         type: textarea
         info: |
-            необходимые для описания пункты см. в условиях конкурса
+            необходимые для описания пункты см. в [условиях конкурса](https://ru.fennougria.ee/granty/programma-rodstvennyh-narodov/premii/)
     -
         id: file
         label: Файлы
         type: file
         info: |
-            загрузка прилагаемых документов, требуемых по условиям конкурса.
-            **NB! В названиях всех загружаемых файлов должны быть обозначены содержимое документа и имя номинанта!**
+            загрузка прилагаемых документов, требуемых по [условиям конкурса](https://ru.fennougria.ee/granty/programma-rodstvennyh-narodov/premii/).
+            **NB!** В названиях всех загружаемых файлов должны быть обозначены содержимое документа и имя номинанта!
             Пример: Рекомендация_ЮрийНиколаев; ПрограммаФестиваля_ ЮрийНиколаев.
     -
         id: urls
         label: Ссылки на дополнительные материалы в интернете
         type: textarea
         info: |
-            необходимые для описания пункты см. в условиях конкурса
+            необходимые для описания пункты см. в [условиях конкурса](https://ru.fennougria.ee/granty/programma-rodstvennyh-narodov/premii/)
 
 submit: Подать заявку
 

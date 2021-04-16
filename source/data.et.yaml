@@ -24,7 +24,7 @@ form:
         id: category
         label: Kategooria
         info: |
-            vt konkursitingimustest
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/)
     -
         id: candidate-name
         label: Kandidaadi nimi
@@ -64,21 +64,21 @@ form:
         label: Taotluse kirjeldus
         type: textarea
         info: |
-            vt konkursitingimustest, millised punktid tuleb välja tuua
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/), millised punktid tuleb välja tuua
     -
         id: file
         label: Failid
         type: file
         info: |
-            Lae üles konkursitingimustes nõutud lisad.
-            **NB! Kõikide üles laetavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!**
+            Laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/) nõutud lisad.
+            **NB!** Kõikide üles laaditavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!
             Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas
     -
         id: urls
         label: Lingid lisamaterjalidele internetis
         type: textarea
         info: |
-            vt konkursitingimustest, millised punktid tuleb välja tuua
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/), millised punktid tuleb välja tuua
 
 submit: Esita avaldus
 
