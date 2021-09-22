@@ -68,8 +68,9 @@ $(function () {
             url: window.entuApiUrl + '/entity-' + window.entuApiId,
             cache: false,
             data: signRequest(properties),
-            success: function(r) {
-                callback(r.result.id)
+            dataType: 'json',
+            success: function(data) {
+                callback(data.result.id)
             }
         })
     }
@@ -88,6 +89,7 @@ $(function () {
             url: window.entuApiUrl + '/file/s3',
             cache: false,
             data: signRequest(fileData),
+            dataType: 'json',
             success: function(data) {
                 uploadToS3(file, data.result.s3.url, data.result.s3.data, function() {
                     callback(data.result.properties['prize-application-file'][0].id)
@@ -135,6 +137,7 @@ $(function () {
             url: window.entuApiUrl + '/entity-' + entityId + '/rights',
             cache: false,
             data: signRequest(data),
+            dataType: 'json',
             success: function() {
                 callback()
             }
