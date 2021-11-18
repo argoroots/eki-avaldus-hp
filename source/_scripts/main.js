@@ -3,6 +3,8 @@ $(function () {
         $('#form').addClass('d-none')
         $('#uploading').removeClass('d-none')
 
+        plausible('Submit')
+
         var data = {
             'prize-application-prize': $('#prize').val(),
             'prize-application-category': $('#category').val(),
@@ -83,6 +85,8 @@ $(function () {
             filesize: file.size,
             filetype: file.type
         }
+
+        plausible('Upload')
 
         $.ajax({
             method: 'POST',
