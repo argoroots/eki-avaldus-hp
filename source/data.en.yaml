@@ -83,19 +83,20 @@ form:
 submit: Submit the nomination
 
 uploading: |
-    Avaldust esitatakse.
+    Saving the submission.
 
-    **Palun oota!**
+    **Please wait!**
 
 done: |
-    **Avaldus esitatud.**
+    **Nomination submitted.**
 
-    Täname!
+    Thank you!
 
 footer: |
-    Küsimuste korral palume ühendust võtta hõimurahvaste programmi koordinaatoriga:
+    If you have any questions, please do not hesitate to contact the coordinator of the Kindred Peoples’ Programme:
 
     Marika Alver
-    Eesti Keele Instituut
+    Kindred Peoples’ Programme
+    Institute of the Estonian Language
     <marika.alver@eki.ee>
     [+372 5552 9199](tel:+37255529199)
