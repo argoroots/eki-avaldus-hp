@@ -1,24 +1,18 @@
 {
   "name": "eki-avaldus",
   "version": "1.0.0",
-  "description": "EKI Avaldus",
   "private": true,
+  "description": "EKI Avaldus",
+  "author": "Argo Roots <argo@roots.ee>",
+  "license": "MIT",
   "engines": {
     "node": "16"
-  },
-  "devDependencies": {
-    "entu-ssg": "5.4.1"
   },
   "scripts": {
     "build": "entu-ssg build entu-ssg.yaml full",
     "dev": "ENTU_API_URL=https://eki.entu.ee/api2 ENTU_API_USER=4480 ENTU_API_KEY=x9EHkWufBvpDxN5GtpPNsNbJR7h9B5SC ENTU_API_ID=4479 entu-ssg serve entu-ssg.yaml full"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/argoroots/eki-avaldus.git"
-  },
-  "bugs": {
-    "url": "https://github.com/argoroots/eki-avaldus/issues"
-  },
-  "homepage": "http://avaldus.eki.entu.ee"
+  "devDependencies": {
+    "entu-ssg": "5.4.9"
+  }
 }
