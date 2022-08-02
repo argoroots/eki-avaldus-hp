@@ -17,13 +17,13 @@ form:
         type: select
         options:
             -
-                value: National (Ethnic) Science Award
-                text: National (Ethnic) Science Award
+                value: Ethnic Science Award
+                text: Ethnic Science Award
     -
         id: category
         label: Category
         info: |
-            see [guidelines for nominating candidates](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/){target="_blank"}
+            see [guidelines for nominating candidates](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
     -
         id: candidate-name
         label: Name of the nominee
@@ -63,13 +63,13 @@ form:
         label: Description of the nomination
         type: textarea
         info: |
-            see the required points under [the conditions of the competition](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/){target="_blank"}
+            see the required points under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
     -
         id: file
         label: Files
         type: file
         info: |
-            upload the documents required under [the conditions of the competition](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/){target="_blank"}
+            upload the documents required under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
 
             **NB!** All uploaded file names must include reference to the content of the document and the nominee’s name!
             *E.g.: Reference_JohnSmith; ListOfPublications_JohnSmith.*
@@ -78,7 +78,7 @@ form:
         label: Links to additional materials online
         type: textarea
         info: |
-            see the required points under [the conditions of the competition](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/){target="_blank"}
+            see the required points under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
 
 submit: Submit the nomination
 
