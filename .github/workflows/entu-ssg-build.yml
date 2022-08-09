@@ -37,15 +37,12 @@ jobs:
         npm install
         npm run build
 
-    - name: Upload assets
+    - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
-        path: assets
-
-    - name: Upload _site
-      uses: actions/upload-pages-artifact@v1
-      with:
-        path: _site
+        path: |
+          _site
+          assets
 
   # Deployment job
   deploy:
