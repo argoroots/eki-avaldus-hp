@@ -37,14 +37,15 @@ jobs:
         npm install
         npm run build
 
-    - name: Copy assets
-      run: |
-        mkdir -p ./_site/assets
-        cp -r ./assets/* ./_site/assets
-        cp ./assets/robots.txt ./_site/
-
-    - name: Upload artifact
+    - name: Upload assets
       uses: actions/upload-pages-artifact@v1
+      with:
+        path: assets
+
+    - name: Upload _site
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: _site
 
   # Deployment job
   deploy:
