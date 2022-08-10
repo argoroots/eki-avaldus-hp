@@ -10,9 +10,9 @@
   },
   "scripts": {
     "build": "entu-ssg build entu-ssg.yaml full",
-    "dev": "ENTU_API_URL=https://eki.entu.ee/api2 ENTU_API_USER=4480 ENTU_API_KEY=x9EHkWufBvpDxN5GtpPNsNbJR7h9B5SC ENTU_API_ID=4479 entu-ssg serve entu-ssg.yaml full"
+    "dev": "entu-ssg serve entu-ssg.yaml full"
   },
   "devDependencies": {
-    "entu-ssg": "5.5.0"
+    "entu-ssg": "5.6.2"
   }
 }

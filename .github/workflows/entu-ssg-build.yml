@@ -1,7 +1,6 @@
-name: Entu SSG
+name: Entu SSG Build
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches:
       - main
@@ -17,7 +16,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -32,19 +31,20 @@ jobs:
       with:
         node-version: 16.x
 
+    - name: Copy public assets
+      run: |
+        mkdir ./_site
+        cp -r ./public/* ./_site
+
     - name: Build
       run: |
         npm install
         npm run build
 
-    - name: Copy assets
-      run: |
-        mkdir -p ./_site/assets
-        cp -r ./assets/* ./_site/assets
-        cp ./assets/robots.txt ./_site/
-
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
+      with:
+        path: dist
 
   # Deployment job
   deploy:
