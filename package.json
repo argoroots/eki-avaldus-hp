@@ -5,9 +5,6 @@
   "description": "EKI Avaldus",
   "author": "Argo Roots <argo@roots.ee>",
   "license": "MIT",
-  "engines": {
-    "node": "16"
-  },
   "scripts": {
     "build": "entu-ssg build entu-ssg.yaml full",
     "dev": "entu-ssg serve entu-ssg.yaml full"
