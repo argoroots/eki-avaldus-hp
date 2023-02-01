@@ -1,8 +1,8 @@
 {
-  "name": "eki-avaldus",
+  "name": "eki-avaldus-hp",
   "version": "1.0.0",
   "private": true,
-  "description": "EKI Avaldus",
+  "description": "EKI HP Avaldus",
   "author": "Argo Roots <argo@roots.ee>",
   "license": "MIT",
   "scripts": {
@@ -10,6 +10,6 @@
     "dev": "entu-ssg serve entu-ssg.yaml full"
   },
   "devDependencies": {
-    "entu-ssg": "5.6.2"
+    "entu-ssg": "5.6.5"
   }
 }
