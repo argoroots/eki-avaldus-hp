@@ -4,7 +4,7 @@ title: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 text: |
     **NB!**
 
-    Käesoleval aastal ootame konkursile väljaspool Venemaa Föderatsiooni tegutsevaid kirjanikke.
+    Käesoleval aastal ootame Ilmapuu auhinnale kandideerima soome-ugri keelte ja kultuuriteemade eestvedajaid Eestis.
 
     Kuna elektroonilist vormi ei saa vahepeal salvestada, siis täitke elektrooniline taotlus alles siis, kui olete kõik vajalikud lisadokumendid kokku kogunud ja saate need taotlusele kohe juurde laadida.
 
@@ -16,21 +16,16 @@ form:
         type: select
         options:
             -
-                value: Kirjandusauhind
-                text: Kirjandusauhind
+                value: Ilmapuu auhind
+                text: Ilmapuu auhind
     -
         id: category
         label: Kategooria
         type: select
         options:
             -
-                value: Aastatel 2018—2022 ilmunud teos
-                text: Aastatel 2018—2022 ilmunud teos
-            -
-                value: Hõimurahvaste kirjanduse edendamine
-                text: Hõimurahvaste kirjanduse edendamine
-        info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/kirjandusauhind/){target="_blank"}
+                value: Kodanikualgatuslik töö
+                text: Kodanikualgatuslik töö
     -
         id: candidate-name
         label: Kandidaadi nimi
@@ -70,13 +65,13 @@ form:
         label: Taotluse kirjeldus
         type: textarea
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/kirjandusauhind/){target="_blank"}, millised punktid tuleb välja tuua
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"}, millised punktid tuleb välja tuua
     -
         id: file
         label: Failid
         type: file
         info: |
-            laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/kirjandusauhind/){target="_blank"} nõutud lisad
+            laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"} nõutud lisad
 
             **NB!** Kõikide üles laaditavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!
             *Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas*
@@ -85,7 +80,7 @@ form:
         label: Lingid lisamaterjalidele internetis
         type: textarea
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/kirjandusauhind/){target="_blank"}, millised punktid tuleb välja tuua
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"}, millised punktid tuleb välja tuua
 
 submit: Esita avaldus
 
