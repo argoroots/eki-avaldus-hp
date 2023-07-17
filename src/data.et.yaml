@@ -4,28 +4,33 @@ title: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 text: |
     **NB!**
 
-    Käesoleval aastal ootame Ilmapuu auhinnale kandideerima soome-ugri keelte ja kultuuriteemade eestvedajaid Eestis.
+    Käesoleval aastal ootame konkursile väljaspool Vene Föderatsiooni tegutsevate teadlaste uurimusi.
 
     Kuna elektroonilist vormi ei saa vahepeal salvestada, siis täitke elektrooniline taotlus alles siis, kui olete kõik vajalikud lisadokumendid kokku kogunud ja saate need taotlusele kohe juurde laadida.
-
 form:
     -
         id: prize
-        class: col-sm-5
+        class: col-sm-6
         label: Auhind
         type: select
         options:
             -
-                value: Ilmapuu auhind
-                text: Ilmapuu auhind
+                value: Rahvusteaduste auhind
+                text: Rahvusteaduste auhind
     -
         id: category
+        class: col-sm-6
         label: Kategooria
         type: select
         options:
             -
-                value: Kodanikualgatuslik töö
-                text: Kodanikualgatuslik töö
+                value: Hõimurahvaste teadusauhind
+                text: Hõimurahvaste teadusauhind
+            -
+                value: Rahvusteaduste auhind
+                text: Rahvusteaduste auhind
+        info: |
+            vt [auhinna statuuti](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/teadusauhindade-statuut/){target="_blank"}
     -
         id: candidate-name
         label: Kandidaadi nimi
@@ -33,17 +38,17 @@ form:
             kandidaadi/kandidaatide ees- ja perekonnanimi
     -
         id: candidate-birthyear
-        class: col-sm-5
+        class: col-sm-6
         label: Kandidaadi sünniaasta
         type: number
     -
         id: candidate-phone
-        class: col-sm-7
+        class: col-sm-6
         label: Kandidaadi telefoninumber
         type: tel
     -
         id: candidate-email
-        class: col-sm-7
+        class: col-sm-6
         label: Kandidaadi e-posti aadress
         type: email
     -
@@ -54,7 +59,7 @@ form:
         label: Kandidaadi esitaja nimi
     -
         id: applicant-email
-        class: col-sm-7
+        class: col-sm-6
         label: Kandidaadi esitaja e-posti aadress
         type: email
     -
@@ -65,13 +70,13 @@ form:
         label: Taotluse kirjeldus
         type: textarea
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"}, millised punktid tuleb välja tuua
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/){target="_blank"}, millised punktid tuleb välja tuua
     -
         id: file
         label: Failid
         type: file
         info: |
-            laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"} nõutud lisad
+            laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/){target="_blank"} nõutud lisad
 
             **NB!** Kõikide üles laaditavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!
             *Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas*
@@ -80,7 +85,7 @@ form:
         label: Lingid lisamaterjalidele internetis
         type: textarea
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"}, millised punktid tuleb välja tuua
+            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/){target="_blank"}, millised punktid tuleb välja tuua
 
 submit: Esita avaldus
 

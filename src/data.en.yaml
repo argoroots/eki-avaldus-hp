@@ -12,7 +12,7 @@ text: |
 form:
     -
         id: prize
-        class: col-sm-5
+        class: col-sm-6
         label: Award
         type: select
         options:
@@ -21,6 +21,7 @@ form:
                 text: Literary Award
     -
         id: category
+        class: col-sm-6
         label: Category
         type: select
         options:
@@ -39,17 +40,17 @@ form:
             first name(s) and surname(s) of the nominee(s)
     -
         id: candidate-birthyear
-        class: col-sm-5
+        class: col-sm-6
         label: Nominee’s year of birth
         type: number
     -
         id: candidate-phone
-        class: col-sm-7
+        class: col-sm-6
         label: Nominee’s phone number
         type: tel
     -
         id: candidate-email
-        class: col-sm-7
+        class: col-sm-6
         label: Nominee’s email address
         type: email
     -
@@ -60,7 +61,7 @@ form:
         label: Nominator’s name
     -
         id: applicant-email
-        class: col-sm-7
+        class: col-sm-6
         label: Nominator’s email address
         type: email
     -
