@@ -1,10 +1,10 @@
-//- nav.navbar.navbar-dark.bg-dark
-//-     .container
-//-         a.navbar-brand.d-none.d-sm-inline(href=self.path)= self.siteTitle
-//-         ul.navbar-nav.ml-auto
-//-             each path, locale in self.otherLocalePaths
-//-                 li.nav-item
-//-                     a.nav-link.pull-right(href=path)= locale.toUpperCase()
+nav.navbar.navbar-dark.bg-dark
+    .container
+        a.navbar-brand.d-none.d-sm-inline(href=self.path)= self.siteTitle
+        ul.navbar-nav.ml-auto
+            each path, locale in self.otherLocalePaths
+                li.nav-item
+                    a.nav-link.pull-right(href=path)= locale.toUpperCase()
 
 .container
     .row.mt-5
