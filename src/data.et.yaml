@@ -15,22 +15,27 @@ form:
         type: select
         options:
             -
-                value: Rahvusteaduste auhind
-                text: Rahvusteaduste auhind
-    -
-        id: category
-        class: col-sm-6
-        label: Kategooria
-        type: select
-        options:
+                value: Hõimurahvaste rahvusteaduste auhind
+                text: Hõimurahvaste rahvusteaduste auhind
             -
                 value: Hõimurahvaste teadusauhind
                 text: Hõimurahvaste teadusauhind
-            -
-                value: Rahvusteaduste auhind
-                text: Rahvusteaduste auhind
         info: |
             vt [auhinna statuuti](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/teadusauhindade-statuut/){target="_blank"}
+    # -
+    #     id: category
+    #     class: col-sm-6
+    #     label: Kategooria
+    #     type: select
+    #     options:
+    #         -
+    #             value: Hõimurahvaste teadusauhind
+    #             text: Hõimurahvaste teadusauhind
+    #         -
+    #             value: Rahvusteaduste auhind
+    #             text: Rahvusteaduste auhind
+    #     info: |
+    #         vt [auhinna statuuti](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/rahvusteaduste-auhind/teadusauhindade-statuut/){target="_blank"}
     -
         id: candidate-name
         label: Kandidaadi nimi

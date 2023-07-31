@@ -5,34 +5,39 @@ title: Ministry of Education and Research of Estonia Kindred Peoples’ Programm
 text: |
     **NB!**
 
-    This year, the competition welcomes the works of writers who are based outside of the Russian Federation.
+    This year, the competition welcomes the works of researchers who are based outside of the Russian Federation.
 
     Since the electronic form cannot be saved before submission, please fill it out only once you have all the required documents at hand to be uploaded with the nomination.
 
 form:
     -
         id: prize
-        class: col-sm-6
+        class: col-sm-9
         label: Award
         type: select
         options:
             -
-                value: Literary Award
-                text: Literary Award
-    -
-        id: category
-        class: col-sm-6
-        label: Category
-        type: select
-        options:
+                value: Uralic Ethnic Studies Award
+                text: Uralic Ethnic Studies Award
             -
-                value: Book published in 2018—2022
-                text: Book published in 2018—2022
-            -
-                value: Promoting the literature of kindred peoples
-                text: Promoting the literature of kindred peoples
+                value: Scientific Research published in a Uralic Language Award
+                text: Scientific Research published in a Uralic Language Award
         info: |
-            see [guidelines for nominating candidates](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/){target="_blank"}
+            see [guidelines for nominating candidates](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
+    # -
+    #     id: category
+    #     class: col-sm-6
+    #     label: Category
+    #     type: select
+    #     options:
+    #         -
+    #             value: Book published in 2018—2022
+    #             text: Book published in 2018—2022
+    #         -
+    #             value: Promoting the literature of kindred peoples
+    #             text: Promoting the literature of kindred peoples
+    #     info: |
+    #         see [guidelines for nominating candidates](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
     -
         id: candidate-name
         label: Name of the nominee
@@ -72,13 +77,13 @@ form:
         label: Description of the nomination
         type: textarea
         info: |
-            see the required points under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/){target="_blank"}
+            see the required points under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
     -
         id: file
         label: Files
         type: file
         info: |
-            upload the documents required under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/){target="_blank"}
+            upload the documents required under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
 
             **NB!** All uploaded file names must include reference to the content of the document and the nominee’s name!
             *E.g.: Reference_JohnSmith; ListOfPublications_JohnSmith.*
@@ -87,7 +92,7 @@ form:
         label: Links to additional materials online
         type: textarea
         info: |
-            see the required points under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/){target="_blank"}
+            see the required points under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/ethnic-science-award/){target="_blank"}
 
 submit: Submit the nomination
 

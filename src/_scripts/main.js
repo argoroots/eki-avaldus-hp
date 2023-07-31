@@ -7,7 +7,7 @@ $(function () {
 
         var data = {
             'prize-application-prize': $('#prize').val(),
-            'prize-application-category': $('#category').val(),
+            // 'prize-application-category': $('#category').val(),
             'prize-application-candidate-name': $('#candidate-name').val(),
             'prize-application-candidate-birthyear': $('#candidate-birthyear').val(),
             'prize-application-candidate-phone': $('#candidate-phone').val(),
