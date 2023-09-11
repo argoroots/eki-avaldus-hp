@@ -10,7 +10,7 @@ text: |
 form:
     -
         id: prize
-        class: col-sm-6
+        class: col-sm-9
         label: Auhind
         type: select
         options:
