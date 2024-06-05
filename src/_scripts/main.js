@@ -67,7 +67,7 @@ $(function () {
     function createEntity(properties, callback) {
         $.ajax({
             method: 'POST',
-            url: window.entuApiUrl + '/entity',
+            url: 'https://entu.app/api/eki/entity',
             cache: false,
             data: properties,
             dataType: 'json',
@@ -89,7 +89,7 @@ $(function () {
 
         $.ajax({
             method: 'POST',
-            url: window.entuApiUrl + '/entity/' + entityId,
+            url: 'https://entu.app/api/eki/entity/' + entityId,
             cache: false,
             data: properties,
             dataType: 'json',
@@ -136,7 +136,7 @@ $(function () {
 
         // $.ajax({
         //     method: 'POST',
-        //     url: window.entuApiUrl + '/entity-' + entityId + '/rights',
+        //     url: 'https://entu.app/api/eki/entity/' + entityId,
         //     cache: false,
         //     data: data,
         //     dataType: 'json',
