@@ -5,20 +5,21 @@ $(function () {
 
         plausible('Submit')
 
-        var data = {
-            'prize-application-prize': $('#prize').val(),
-            // 'prize-application-category': $('#category').val(),
-            'prize-application-candidate-name': $('#candidate-name').val(),
-            'prize-application-candidate-birthyear': $('#candidate-birthyear').val(),
-            'prize-application-candidate-phone': $('#candidate-phone').val(),
-            'prize-application-candidate-email': $('#candidate-email').val(),
-            'prize-application-candidate-workplace': $('#candidate-workplace').val(),
-            'prize-application-applicant-name': $('#applicant-name').val(),
-            'prize-application-applicant-email': $('#applicant-email').val(),
-            'prize-application-applicant-workplace': $('#applicant-workplace').val(),
-            'prize-application-notes': $('#notes').val(),
-            'prize-application-urls': $('#urls').val()
-        }
+        var properties = [
+            { type: '_type', reference: 'prize-application' },
+            { type: 'prize', string: $('#prize').val() },
+            { type: 'category', string: $('#category').val() },
+            { type: 'candidate-name', string: $('#candidate-name').val() },
+            { type: 'candidate-birthyear', string: $('#candidate-birthyear').val() },
+            { type: 'candidate-phone', string: $('#candidate-phone').val() },
+            { type: 'candidate-email', string: $('#candidate-email').val() },
+            { type: 'candidate-workplace', string: $('#candidate-workplace').val() },
+            { type: 'applicant-name', string: $('#applicant-name').val() },
+            { type: 'applicant-email', string: $('#applicant-email').val() },
+            { type: 'applicant-workplace', string: $('#applicant-workplace').val() },
+            { type: 'notes', string: $('#notes').val() },
+            { type: 'urls', string: $('#urls').val()},
+        ]
 
         var files = []
         var fileElements = $('#file input[type="file"]')
@@ -29,7 +30,7 @@ $(function () {
             }
         }
 
-        createEntity(data, function(newEntityId) {
+        createEntity(properties, function(newEntityId) {
             var filesUploaded = 0
             var filesToUpload = files.length
 
@@ -41,6 +42,7 @@ $(function () {
                     createFileProperty(newEntityId, files[i], function(result) {
                         filesUploaded++
                         console.log('Created file property #', result)
+
                         if (filesToUpload === filesUploaded) {
                             updateRights(newEntityId, function (r) {
                                 console.log('Updated rights')
@@ -63,53 +65,44 @@ $(function () {
     })
 
     function createEntity(properties, callback) {
-        properties.definition = 'prize-application'
-
         $.ajax({
             method: 'POST',
-            url: window.entuApiUrl + '/entity-' + window.entuApiId,
+            url: window.entuApiUrl + '/entity',
             cache: false,
-            data: signRequest(properties),
+            data: properties,
             dataType: 'json',
             success: function(data) {
-                callback(data.result.id)
+                callback(data._id)
             }
         })
     }
 
     function createFileProperty(entityId, file, callback) {
-        var fileData = {
-            entity: entityId,
-            property: 'prize-application-file',
+        var properties = [{
+            type: 'file',
             filename: file.name,
             filesize: file.size,
             filetype: file.type
-        }
+        }]
 
         plausible('Upload')
 
         $.ajax({
             method: 'POST',
-            url: window.entuApiUrl + '/file/s3',
+            url: window.entuApiUrl + '/entity/' + entityId,
             cache: false,
-            data: signRequest(fileData),
+            data: properties,
             dataType: 'json',
             success: function(data) {
-                uploadToS3(file, data.result.s3.url, data.result.s3.data, function() {
-                    callback(data.result.properties['prize-application-file'][0].id)
+                uploadFile(file, data.properties[0].upload, function() {
+                    callback(data.properties[0]._id)
                 })
             }
         })
     }
 
-    function uploadToS3(file, s3url, s3data, callback) {
+    function uploadFile(file, s3data, callback) {
         var xhr = new XMLHttpRequest()
-        var form = new FormData()
-
-        for(var i in s3data) {
-            form.append(i, s3data[i])
-        }
-        form.append('file', file)
 
         xhr.upload.addEventListener('progress', function(event) {
             if(event.lengthComputable) {
@@ -127,40 +120,31 @@ $(function () {
             }
         }
 
-        xhr.open('POST', s3url, true)
-        xhr.send(form)
+        xhr.open(s3data.method, s3data.url, true)
+
+        for (var headerName in s3data.headers) {
+            xhr.setRequestHeader(headerName, s3data.headers[headerName])
+        }
+
+        xhr.send(file)
     }
 
     function updateRights(entityId, callback) {
-        var data = {
-            entity: window.entuApiUser
-        }
+        // var data = {
+        //     entity: window.entuApiUser
+        // }
 
-        $.ajax({
-            method: 'POST',
-            url: window.entuApiUrl + '/entity-' + entityId + '/rights',
-            cache: false,
-            data: signRequest(data),
-            dataType: 'json',
-            success: function() {
-                callback()
-            }
-        })
-    }
+        // $.ajax({
+        //     method: 'POST',
+        //     url: window.entuApiUrl + '/entity-' + entityId + '/rights',
+        //     cache: false,
+        //     data: data,
+        //     dataType: 'json',
+        //     success: function() {
+        //         callback()
+        //     }
+        // })
 
-    function signRequest(data) {
-        var expiration = new Date()
-        expiration.setMinutes(expiration.getMinutes() + 10)
-
-        var conditions = []
-        for(k in data) {
-            conditions.push({ k: data[k] })
-        }
-
-        data.user = window.entuApiUser
-        data.policy = CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(JSON.stringify({ expiration: expiration.toISOString(), conditions: conditions })))
-        data.signature = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA1(data['policy'], window.entuApiKey))
-
-        return data
+        callback()
     }
 })
