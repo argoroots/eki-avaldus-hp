@@ -6,7 +6,8 @@ $(function () {
         plausible('Submit')
 
         var properties = [
-            { type: '_type', reference: 'prize-application' },
+            { type: '_type', reference: '66603579bb3ad6bf9b82a85c' }, // prize_application
+            { type: '_parent', reference: '65700796bb3ad6bf9b82a5e5' }, // Web - avaldus.eki.entu.ee
             { type: 'prize', string: $('#prize').val() },
             // { type: 'category', string: $('#category').val() },
             { type: 'candidate_name', string: $('#candidate-name').val() },
