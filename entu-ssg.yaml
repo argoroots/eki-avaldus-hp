@@ -1,5 +1,5 @@
 locales:
-    # - en
+    - en
     - et
 defaultLocale: et
 

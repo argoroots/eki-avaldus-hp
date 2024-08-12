@@ -4,7 +4,7 @@ title: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 text: |
     **NB!**
 
-    Käesoleval aastal ootame konkursile kandideerima soome-ugri keelte ja kultuuriteemade eestvedajaid väljaspool Vene Föderatsiooni.
+    Kuni 2. septembrini 2024 on avatud hõimurahvaste rahvusteaduste auhinna ja teadusauhinna konkurssid. Ootame konkursile väljaspool Vene Föderatsiooni tegutsevate teadlaste uurimusi.
 
     Kuna elektroonilist vormi ei saa vahepeal salvestada, siis täitke elektrooniline taotlus alles siis, kui olete kõik vajalikud lisadokumendid kokku kogunud ja saate need taotlusele kohe juurde laadida.
 form:
@@ -15,10 +15,13 @@ form:
         type: select
         options:
             -
-                value: Ilmapuu auhind
-                text: Ilmapuu auhind
-        # info: |
-        #     vt [auhinna statuuti](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/statuut/){target="_blank"}
+                value: Rahvusteaduste auhind
+                text: Rahvusteaduste auhind
+            -
+                value: Hõimurahvaste teadusauhind
+                text: Hõimurahvaste teadusauhind
+        info: |
+            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf){target="_blank"}
     # -
     #     id: category
     #     class: col-sm-6
@@ -32,7 +35,7 @@ form:
     #             value: Rahvusteaduste auhind
     #             text: Rahvusteaduste auhind
     #     info: |
-    #         vt [auhinna statuuti](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/statuut/){target="_blank"}
+    #         vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdfstatuut/){target="_blank"}
     -
         id: candidate-name
         label: Kandidaadi nimi
@@ -72,13 +75,19 @@ form:
         label: Taotluse kirjeldus
         type: textarea
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"}, millised punktid tuleb välja tuua
+            Lisage kandidaadi tegevuse kirjeldus, kandidaadi CV.
+
+            vt [konkursitingimustest](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf){target="_blank"}, millised punktid tuleb välja tuua
     -
         id: file
         label: Failid
         type: file
         info: |
-            laadi üles [konkursitingimustes](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"} nõutud lisad
+            Kohustuslikud dokumendid, mis tuleb taotlusele juurde laadida:
+
+            - avaldatud monograafia, kogumik või koguteos .pdf formaadis;
+            - 1-2 soovituskirja või eksperthinnangut (eesti, vene või inglise keeles);
+            - publikatsioonide nimekiri.
 
             **NB!** Kõikide üles laaditavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!
             *Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas*
@@ -87,7 +96,7 @@ form:
         label: Lingid lisamaterjalidele internetis
         type: textarea
         info: |
-            vt [konkursitingimustest](https://fennougria.ee/toetused/hoimurahvaste-programm/auhinnad/ilmapuu/){target="_blank"}, millised punktid tuleb välja tuua
+            Juurde võib lisada linke materjalidele Internetis, näiteks meediakajastusele, ürituste fotogaleriile jmt.
 
 submit: Esita avaldus
 
