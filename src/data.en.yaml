@@ -3,9 +3,15 @@ title: Ministry of Education and Research of Estonia Kindred Peoples’ Programm
 
 
 text: |
-    **NB!**
+    Kindred People’s Programme calls for nominations for the Uralic Ethnic Studies Award 2024 and for the Scientific Research published in a Uralic Language Award 2024.
 
-    This year, the competition welcomes the works of writers who are based outside of the Russian Federation.
+    **Uralic Ethnic Studies AWARD:** is issued for academic work about Uralic ethnic sciences (literature, linguistics, history, archaeology, ethnology, folkloristics) in any language.
+
+    **Scientific research published in a Uralic language AWARD:** is issued for academic work in any field written in a Uralic language.
+
+    The awards are given out for a monograph, collection or full volume published within the past four years (2020—2024). Anyone can make a nomination, and self-nomination is also permitted. This year, the competition welcomes the works of researchers who are based outside the Russian Federation. See the [statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf).
+
+    Deadline for submitting nominations: **05.09.2024.**
 
     Since the electronic form cannot be saved before submission, please fill it out only once you have all the required documents at hand to be uploaded with the nomination.
 
@@ -17,13 +23,13 @@ form:
         type: select
         options:
             -
-                value: Book published in 2019-2023
-                text: Book published in 2019-2023
+                value: Uralic Ethnic Studies Award
+                text: Uralic Ethnic Studies Award
             -
-                value: Promoting the Literature of Kindred Peoples
-                text: Promoting the Literature of Kindred Peoples
+                value: Scientific Research Published In A Uralic Language Award
+                text: Scientific Research Published In A Uralic Language Award
         info: |
-            see [the statute of the award](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/statute/){target="_blank"}
+            see [the statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf){target="_blank"}
     # -
     #     id: category
     #     class: col-sm-6
@@ -37,7 +43,7 @@ form:
     #             value: Promoting the literature of kindred peoples
     #             text: Promoting the literature of kindred peoples
     #     info: |
-    #         see [the statute of the award](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/statute/){target="_blank"}
+    #         see [the statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf){target="_blank"}
     -
         id: candidate-name
         label: Name of the nominee
@@ -83,7 +89,11 @@ form:
         label: Files
         type: file
         info: |
-            upload the documents required under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/){target="_blank"}
+            Required documents that must be uploaded with the nomination:
+
+            - published monograph, collection or full volume in .pdf format;
+            - 1-2 references or expert evaluations (in Estonian, Russian or English);
+            - list of publications.
 
             **NB!** All uploaded file names must include reference to the content of the document and the nominee’s name!
             *E.g.: Reference_JohnSmith; ListOfPublications_JohnSmith.*
@@ -92,7 +102,7 @@ form:
         label: Links to additional materials online
         type: textarea
         info: |
-            see the required points under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/){target="_blank"}
+            Links to additional materials online, such as media coverage, photo galleries of events, etc., may be added.
 
 submit: Submit the nomination
 
