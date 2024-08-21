@@ -29,7 +29,7 @@ form:
                 value: Scientific Research Published In A Uralic Language Award
                 text: Scientific Research Published In A Uralic Language Award
         info: |
-            see [the statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf){target="_blank"}
+            See [the statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf){target="_blank"}.
     # -
     #     id: category
     #     class: col-sm-6
@@ -83,7 +83,9 @@ form:
         label: Description of the nomination
         type: textarea
         info: |
-            see the required points under [the conditions of the competition](https://fennougria.ee/en/grants/kindred-peoples-programme/awards/literary-award/){target="_blank"}
+            Please describe nominee’s activities, add nominee’s CV.
+
+            See the [statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf){target="_blank"}.
     -
         id: file
         label: Files
