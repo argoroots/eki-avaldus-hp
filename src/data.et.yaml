@@ -18,12 +18,8 @@ form:
         label: Auhind
         type: select
         options:
-            -
-                value: Hõimurahvaste rahvusteaduste auhind
-                text: Hõimurahvaste rahvusteaduste auhind
-            -
-                value: Hõimurahvaste teadusauhind
-                text: Hõimurahvaste teadusauhind
+            - Hõimurahvaste rahvusteaduste auhind
+            - Hõimurahvaste teadusauhind
         info: |
             vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf){target="_blank"}
     # -
