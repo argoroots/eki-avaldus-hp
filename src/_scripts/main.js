@@ -3,7 +3,7 @@ $(function () {
         $('#form').addClass('d-none')
         $('#uploading').removeClass('d-none')
 
-        plausible('Submit')
+        window.analytics.track('submit')
 
         var properties = [
             { type: '_type', reference: '66603579bb3ad6bf9b82a85c' }, // prize_application
@@ -109,7 +109,7 @@ $(function () {
             filetype: file.type
         }]
 
-        plausible('Upload')
+        window.analytics.track('upload')
 
         $.ajax({
             method: 'POST',
