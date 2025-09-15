@@ -2,13 +2,11 @@ siteTitle: Kandidaatide esitamise elektrooniline vorm
 title: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 
 text: |
-    **NB!**
+    Avatud on hõimurahvaste programmi 2025. aasta kirjandusauhinna konkurss. Auhind antakse:
 
-    Avatud on hõimurahvaste rahvusteaduste auhinna ja teadusauhinna konkursid:
-    - hõimurahvaste rahvusteaduste auhind antakse välja Uurali rahvaste rahvusteaduste (kirjandusteadus, keeleteadus, ajalugu, arheoloogia, etnoloogia, folkloristika) alase teadustöö eest mistahes keeles.
-    - hõimurahvaste teadusauhind antakse välja mõnes hõimurahvaste keeles avaldatud teadustöö eest mistahes erialal.
-
-    Ootame konkursile väljaspool Vene Föderatsiooni tegutsevate teadlaste uurimusi kuni **3. septembrini 2025**.
+    - kirjanikule või tõlkijale hõimurahvaste keeltes avaldatud kirjanduslikult ja keeleliselt märkimisväärse ilukirjandusteose eest, mis on ilmunud nelja viimase aasta jooksul (2021—2025)
+    - kirjanikule või tõlkijale, kelle tegevus on märkimisväärselt aidanud tutvustada omariikluseta hõimurahvaste kirjandust Eestis ja laiemalt Euroopas.
+    Käesoleval aastal ootame konkursile kandideerima väljaspool Vene Föderatsiooni tegutsevaid kirjanikke. Kandidaatide esitamise tähtaeg on **8. oktoober 2025**.
 
     Kuna elektroonilist vormi ei saa vahepeal salvestada, siis täitke elektrooniline taotlus alles siis, kui olete kõik vajalikud lisadokumendid kokku kogunud ja saate need taotlusele kohe juurde laadida.
 form:
@@ -18,10 +16,10 @@ form:
         label: Auhind
         type: select
         options:
-            - Hõimurahvaste rahvusteaduste auhind
-            - Hõimurahvaste teadusauhind
+            - aastatel 2021–2025 ilmunud ilukirjanduslik teos
+            - omariikluseta hõimurahvaste kirjanduse edendamine
         info: |
-            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf){target="_blank"}
+            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/Kirjandusauhinna-statuut.pdf){target="_blank"}
     # -
     #     id: category
     #     class: col-sm-6
@@ -35,7 +33,7 @@ form:
     #             value: Rahvusteaduste auhind
     #             text: Rahvusteaduste auhind
     #     info: |
-    #         vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf/){target="_blank"}
+    #         vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/Kirjandusauhinna-statuut.pdf){target="_blank"}
     -
         id: candidate-name
         label: Kandidaadi nimi
@@ -77,16 +75,20 @@ form:
         info: |
             Lisage kandidaadi tegevuse kirjeldus ja CV.
 
-            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf){target="_blank"}, millised punktid tuleb välja tuua
+            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/Kirjandusauhinna-statuut.pdf){target="_blank"}, millised punktid tuleb välja tuua
     -
         id: file
         label: Failid
         type: file
         info: |
             Kohustuslikud dokumendid, mis tuleb taotlusele juurde laadida:
-            - avaldatud monograafia, kogumik või koguteos .pdf formaadis;
             - 1-2 soovituskirja või eksperthinnangut (eesti, vene või inglise keeles);
-            - publikatsioonide nimekiri.
+            - varem avaldatud omaloominguliste ja/või tõlgitud teoste nimekiri
+            - taotluse juurde laadida teose .pdf fail või saata avaldatud teose 2 eksemplari postiaadressile:
+                Marika Alver
+                Hõimurahvaste programm
+                Eesti Keele Instituut
+                Roosikrantsi 6, Tallinn 10119
 
             **NB!** Kõikide üles laaditavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!
             *Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas*
