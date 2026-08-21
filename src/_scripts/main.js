@@ -1,4 +1,26 @@
 $(function () {
+    function showError() {
+        $('#form, #uploading, #done').addClass('d-none')
+        $('#error').removeClass('d-none')
+    }
+
+    getToken(function(token) {
+        if(!token) {
+            console.error('No token')
+            showError()
+            return
+        }
+
+        $.ajax({
+            method: 'GET',
+            url: 'https://api.entu.app/eki',
+            cache: false,
+            headers: { 'Authorization': 'Bearer ' + token },
+            error: showError
+        })
+    })
+
+
     $('#submit').click(function () {
         $('#form').addClass('d-none')
         $('#uploading').removeClass('d-none')
@@ -34,6 +56,7 @@ $(function () {
         getToken(function(token) {
             if(!token) {
                 console.error('No token')
+                showError()
                 return
             }
 
@@ -82,7 +105,8 @@ $(function () {
             headers: { 'Authorization': 'Bearer ' + window.entuApiKey },
             success: function(data) {
                 callback(data.token)
-            }
+            },
+            error: showError
         })
     }
 
@@ -97,7 +121,8 @@ $(function () {
             dataType: 'json',
             success: function(data) {
                 callback(data._id)
-            }
+            },
+            error: showError
         })
     }
 
@@ -123,7 +148,8 @@ $(function () {
                 uploadFile(file, data.properties[0].upload, function() {
                     callback(data.properties[0]._id)
                 })
-            }
+            },
+            error: showError
         })
     }
 
@@ -143,7 +169,13 @@ $(function () {
 
             if(xhr.readyState == 4 && xhr.status != 200) {
                 console.error(file.name + ' - UPLOAD ERROR!')
+                showError()
             }
+        }
+
+        xhr.onerror = function() {
+            console.error(file.name + ' - UPLOAD ERROR!')
+            showError()
         }
 
         xhr.open(s3data.method, s3data.url, true)

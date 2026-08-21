@@ -24,6 +24,11 @@ block content
             .col-sm-8.offset-sm-2.my-5.text-center
                 +markdown(self.done)
 
+    #error.d-none.container
+        .row
+            .col-sm-8.offset-sm-2.my-5.text-center.text-danger
+                +markdown(self.error)
+
 block script
     script.
         window.entuApiKey = '#{ self.env.ENTU_API_KEY }'
