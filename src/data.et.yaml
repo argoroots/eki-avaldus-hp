@@ -2,13 +2,12 @@ siteTitle: Kandidaatide esitamise elektrooniline vorm
 title: Haridus- ja Teadusministeeriumi hõimurahvaste programmi auhinnad
 
 text: |
-    Avatud on hõimurahvaste programmi Ilmapuu auhinna 2026. aasta konkurss. Ootame konkursile kandideerima soome-ugri keelte ja kultuuriteemade eestvedajaid Eestis ja Euroopas.
+    Avatud on hõimurahvaste rahvusteaduste auhinna ja teadusauhinna konkurss:
 
-    **Kandidaatide esitamise tähtaeg on 5. mai 2026.**
+    - **hõimurahvaste rahvusteaduste auhind** antakse välja Uurali rahvaste rahvusteaduste (kirjandusteadus, keeleteadus, ajalugu, arheoloogia, etnoloogia, folkloristika) alase teadustöö eest mis tahes keeles;
+    - **hõimurahvaste teadusauhind** antakse välja mõnes hõimurahvaste keeles avaldatud teadustöö eest mis tahes erialal.
 
-    Auhind antakse silmapaistva kodanikualgatuse eest inimesele:
-    - kelle tegevus on tulemuslikult ja tänuväärselt seotud hõimurahvaste kultuurilise identiteedi ja püsimajäämisega
-    - kes on oluliselt aidanud tugevdada koostööd soome-ugri hõimurahvastega ja tutvustanud hõimurahvaid Eestis ja laiemalt Euroopas.
+    Ootame konkursile väljaspool Vene Föderatsiooni tegutsevate teadlaste uurimusi kuni **15. septembrini 2026**.
 
     Kuna elektroonilist vormi ei saa vahepeal salvestada, siis täitke elektrooniline taotlus alles siis, kui olete kõik vajalikud lisadokumendid kokku kogunud ja saate need taotlusele kohe juurde laadida.
 form:
@@ -18,9 +17,10 @@ form:
         label: Auhind
         type: select
         options:
-            - Ilmapuu auhind
+            - Hõimurahvaste rahvusteaduste auhind
+            - Hõimurahvaste teadusauhind
         info: |
-            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/Ilmapuu-auhinna-statuut.pdf){target="_blank"}
+            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf){target="_blank"}
     # -
     #     id: category
     #     class: col-sm-6
@@ -34,7 +34,7 @@ form:
     #             value: Rahvusteaduste auhind
     #             text: Rahvusteaduste auhind
     #     info: |
-    #         vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/Ilmapuu-auhinna-statuut.pdf){target="_blank"}
+    #         vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf){target="_blank"}
     -
         id: candidate-name
         label: Kandidaadi nimi
@@ -76,14 +76,16 @@ form:
         info: |
             Lisage kandidaadi tegevuse kirjeldus ja CV.
 
-            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/Ilmapuu-auhinna-statuut.pdf){target="_blank"}, millised punktid tuleb välja tuua
+            vt [auhinna statuuti](https://eki.ee/wp-content/uploads/2024/03/HOIMURAHVASTE-RAHVUSTEADUSTE-AUHIND-JA-HOIMURAHVASTE-TEADUSAUHIND.pdf){target="_blank"}, millised punktid tuleb välja tuua
     -
         id: file
         label: Failid
         type: file
         info: |
-            Kohustuslikud dokumendid, mis tuleb taotlusele juurde laadida:
+            Kohustuslikud dokumendid, mis tuleb taotlusele lisada:
+            - avaldatud monograafia, kogumik või koguteos .pdf formaadis;
             - 1-2 soovituskirja või eksperthinnangut (eesti, vene või inglise keeles);
+            - publikatsioonide nimekiri.
 
             **NB!** Kõikide üles laaditavate failide nimetuses tuleb välja tuua dokumendi sisu ja nominendi nimi!
             *Näide: Soovituskiri_MariMaasikas; Festivaliprogramm_MariMaasikas*
@@ -105,6 +107,11 @@ done: |
     **Avaldus esitatud.**
 
     Täname!
+
+error: |
+    **Süsteemis on tehniline tõrge!**
+
+    Palun proovi hiljem uuesti või võta ühendust allpool toodud kontaktidel.
 
 footer: |
     Küsimuste korral palume ühendust võtta:

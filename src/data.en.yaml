@@ -116,6 +116,11 @@ done: |
 
     Thank you!
 
+error: |
+    **A technical error has occurred!**
+
+    Please try again later or get in touch using the contacts below.
+
 footer: |
     If you have any questions, please do not hesitate to contact the coordinator of the Kindred Peoples’ Programme:
 
