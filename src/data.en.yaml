@@ -3,16 +3,17 @@ title: Ministry of Education and Research of Estonia Kindred Peoples’ Programm
 
 
 text: |
-    Kindred Peoples’ Programme calls for nominations for the Literary Award 2025. The Literary Award may be issued to:
+    Kindred People’s Programme calls for nominations:
 
-    - a writer or a translator for a work of fiction of noteworthy literary and linguistic value published in a kindred people’s language in the past four years (2021—2025);
-    - a writer or a translator whose activities have notably helped introduce the literature of kindred peoples without their own statehood in Estonia and at the European level.
+    Uralic Ethnic Studies Award 2026, which is awarded for academic work on Uralic ethnic studies (literature, linguistics, history, archaeology, ethnology, and folkloristics) in any language.
+    Scientific Research Published in a Uralic Language Award 2026, which is awarded for academic work in any field written in a Uralic language.
+    The awards are given for a monograph, collection or full volume published within the past four years (2022–2026). Anyone can make a nomination, and self-nominations are also permitted. This year, the is open to researchers based outside the Russian Federation.
 
-    See the [statute of the award](https://eki.ee/wp-content/uploads/2024/09/Kindred-People_s-Literary-Award_Statute.pdf).
 
-    Deadline for submitting nominations: **14.10.2025**.
 
-    Prize fund is 2,500 euros. Laureates of the Literary Award will be announced on 1st November, which is the memorial day of the Udmurt writer and public figure Kuzebai Gerd (1898–1937).
+    Deadline for submitting nominations: 15 September 2026.
+
+    NB! Since the electronic form cannot be saved before submission, please fill it out only once you have all the required documents ready for upload with the nomination.
 
 form:
     -
@@ -21,10 +22,10 @@ form:
         label: Award
         type: select
         options:
-            - Book published in 2021–2025
-            - Promoting the Literature of Kindred Peoples
+            - Uralic Ethnic Studies Award 2026
+            - Scientific Research Published In A Uralic Language Award 2026
         info: |
-            See [the statute of the award](https://eki.ee/wp-content/uploads/2024/09/Kindred-People_s-Literary-Award_Statute.pdf){target="_blank"}.
+            See [the statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf){target="_blank"}.
     # -
     #     id: category
     #     class: col-sm-6
@@ -38,7 +39,7 @@ form:
     #             value: Promoting the literature of kindred peoples
     #             text: Promoting the literature of kindred peoples
     #     info: |
-    #         see [the statute of the award](https://eki.ee/wp-content/uploads/2024/09/Kindred-People_s-Literary-Award_Statute.pdf){target="_blank"}
+    #         see [the statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf){target="_blank"}
     -
         id: candidate-name
         label: Name of the nominee
@@ -80,7 +81,7 @@ form:
         info: |
             Please describe nominee’s activities, add nominee’s CV.
 
-            See the [statute of the award](https://eki.ee/wp-content/uploads/2024/09/Kindred-People_s-Literary-Award_Statute.pdf){target="_blank"}.
+            See the [statute of the award](https://eki.ee/wp-content/uploads/2024/08/Uralic-Ethnic-Studies-Award-and-Scientific-Research-Published-In-A-Uralic-Language-Award.pdf){target="_blank"}.
     -
         id: file
         label: Files
@@ -88,12 +89,9 @@ form:
         info: |
             Required documents that must be uploaded with the nomination:
 
-            - 1-2 references or recommendation letters (in Estonian, Russian, or English)
-            - list of previously published original and/or translated works
-            - a PDF file of the published book can also be uploaded to the application or you can send 2 copies of the published book to the postal address:
-                Marika Alver
-                Eesti Keele Instituut
-                Roosikrantsi 6, Tallinn 10119
+            - the published monograph, collection or full volume in PDF format;
+            - 1–2 references or expert evaluations (in Estonian, Russian, or English);
+            - a list of publications.
 
             **NB!** All uploaded file names must include reference to the content of the document and the nominee’s name!
             *E.g.: Reference_JohnSmith; ListOfPublications_JohnSmith.*
