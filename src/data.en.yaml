@@ -3,16 +3,16 @@ title: Ministry of Education and Research of Estonia Kindred Peoples’ Programm
 
 
 text: |
-    Kindred Peoples’ Programme calls for nominations for the Literary Award 2026
+    **Kindred Peoples’ Programme calls for nominations for the Kindred Peoples’ Literary Award 2026!**
 
-    The Literary Award may be issued to:
+    The purpose of the award is to honor writers and translators who either represent or promote the literature of Finno-Ugric peoples without their own statehood. The Kindred Peoples Literary Award is open to
 
-    - a writer or a translator for a work of fiction of noteworthy literary and linguistic value published in a kindred people’s language in the past four years (2022—2026);
-    - a writer or a translator whose activities have notably helped introduce the literature of kindred peoples without their own statehood in Estonia and at the European level.
+    - a writer or a translator for a work of fiction of excpetional literary and linguistic merit, published in the kindred people’s language over the past four years (2022–2026);
+    - a writer or a translator whose activities have notably helped to introduce the literature of statless kindred peoples to Estonian or the wider European public.
 
-    Deadline for submitting nominations: **21 October 2026**.
+    **Deadline for submitting nominations is 21 October 2026.**
 
-    Prize fund is 2,500 euros. Laureates of the Literary Award will be announced on 1st November, which is the memorial day of the Udmurt writer and public figure Kuzebai Gerd (1898–1937).
+    For more information, including a list of past laureates, please [click here](https://eki.ee/hoimurahvaste-kirjandusauhind/).
 
     NB! Since the electronic form cannot be saved before submission, please fill it out only once you have all the required documents ready for upload with the nomination.
 
@@ -25,8 +25,8 @@ form:
         options:
             - Book published in 2022–2026
             - Promoting the Literature of Kindred Peoples
-        info: |
-            See [the statute of the award](https://eki.ee/wp-content/uploads/2024/09/Kindred-People_s-Literary-Award_Statute.pdf){target="_blank"}.
+        # info: |
+        #     See [the statute of the award](https://eki.ee/wp-content/uploads/2024/09/Kindred-People_s-Literary-Award_Statute.pdf){target="_blank"}.
     # -
     #     id: category
     #     class: col-sm-6
@@ -82,7 +82,7 @@ form:
         info: |
             Please describe nominee’s activities, add nominee’s CV.
 
-            See the [statute of the award](https://eki.ee/wp-content/uploads/2024/09/Kindred-People_s-Literary-Award_Statute.pdf){target="_blank"}.
+        #    See the [statute of the award](https://eki.ee/wp-content/uploads/2024/09/Kindred-People_s-Literary-Award_Statute.pdf){target="_blank"}.
     -
         id: file
         label: Files
